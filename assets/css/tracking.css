@@ -1,0 +1,81 @@
+/* Reset default form styles */
+.tracking-notification-form form {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Style the form container */
+.tracking-notification-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form heading */
+.tracking-notification-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style form labels */
+.tracking-notification-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style form input fields */
+.tracking-notification-form input[type="text"],
+.tracking-notification-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style form submit button */
+.tracking-notification-form button[type="submit"] {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Style the response message container */
+.tracking-notification-form #notification-response {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: none; /* Hide initially */
+}
+
+/* Style success and error messages */
+.tracking-notification-form #notification-response.success {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.tracking-notification-form #notification-response.error {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .tracking-notification-form {
+        width: 90%;
+    }
+}

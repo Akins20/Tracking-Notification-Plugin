@@ -8,7 +8,7 @@ Author: Ogunbiyi Elijah Akintunde
 
 // Enqueue JavaScript for AJAX
 function enqueue_tracking_notification_script() {
-    wp_enqueue_script('tracking-notification', plugins_url('js/tracking-notification.js', __FILE__), array('jquery'), '1.0', true);
+    wp_enqueue_script('tracking-notification', plugins_url('assets/js/tracking-notification.js', __FILE__), array('jquery'), '1.0', true);
 
     // Add a nonce to the AJAX URL
     wp_localize_script('tracking-notification', 'tracking_data', array(
@@ -17,6 +17,35 @@ function enqueue_tracking_notification_script() {
     ));
 }
 add_action('wp_enqueue_scripts', 'enqueue_tracking_notification_script');
+
+function enqueue_tracking_notification_styles() {
+    wp_enqueue_style('tracking-notification-style', plugins_url('assets/css/tracking.css', __FILE__));
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_tracking_notification_styles');
+
+function tracking_notification_form_shortcode()
+{
+    ob_start(); // Start output buffering
+?>
+
+    <div class="tracking-notification-form">
+        <h2>Tracking Notification</h2>
+        <form id="tracking-form">
+            <label for="order-number">Order Number:</label>
+            <input type="text" id="order-number" name="order_number" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="notification-response"></div>
+    </div>
+    <?php
+    return ob_get_clean(); // End output buffering and return the form HTML
+}
+add_shortcode('tracking_notification_form', 'tracking_notification_form_shortcode');
 
 // AJAX handler for fetching tracking info and sending notifications
 function fetch_tracking_info_and_notify() {
