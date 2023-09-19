@@ -13,7 +13,7 @@ The Tracking Notification Plugin is a WordPress plugin designed to help WooComme
 
 To install the Tracking Notification Plugin, follow these steps:
 
-1. Download the plugin ZIP file from the [GitHub repository](https://github.com/your-repo/tracking-notification-plugin) or another source.
+1. Download the plugin ZIP file from the [GitHub repository](https://github.com/Akins20/Tracking-Notification-Plugin) or another source.
 2. In your WordPress admin panel, navigate to **Plugins > Add New**.
 3. Click the **Upload Plugin** button.
 4. Choose the downloaded ZIP file and click **Install Now**.
@@ -53,7 +53,7 @@ For questions, bug reports, or feedback, please contact the plugin author:
 
 - Author: Ogunbiyi Elijah Akintunde
 - Email: ogunbiye@gmail.com
-- GitHub: [Your GitHub Profile](https://github.com/your-github-profile)
+- GitHub: [Your GitHub Profile](https://github.com/Akins20/)
 
 ## License
 
