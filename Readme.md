@@ -53,7 +53,7 @@ For questions, bug reports, or feedback, please contact the plugin author:
 
 - Author: Ogunbiyi Elijah Akintunde
 - Email: ogunbiye@gmail.com
-- GitHub: [Your GitHub Profile](https://github.com/Akins20/)
+- GitHub: [Akins20](https://github.com/Akins20/)
 
 ## License
 
